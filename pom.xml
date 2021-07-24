@@ -10,7 +10,7 @@
 
 	<groupId>github</groupId>
 	<artifactId>nish</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>nish</name>
 	<description>Demonstration for GitHub x Azure DevOps CI/CD with Release Plugin</description>
 	<properties>
@@ -19,7 +19,8 @@
 
 	<scm>
         <developerConnection>scm:git:https://github.com/NishkarshRaj/az-dev-community-demo</developerConnection>
-    </scm>
+      <tag>nish-1.0.0</tag>
+  </scm>
 
 	<build>
 		<plugins>
