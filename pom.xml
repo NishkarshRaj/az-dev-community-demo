@@ -30,7 +30,7 @@
 				<version>3.0.0-M4</version>
 			<configuration>
 						<username>NishkarshRaj</username>
-						<password>owfq7djd76bzwbr4f7rifwt3anfoa3xe5it5u7n5ijxrlijttj5a</password>
+						<password>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</password>
 					</configuration>
 				  </plugin>
 				
@@ -79,5 +79,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	
+
 </project>
