@@ -17,6 +17,28 @@
 		<java.version>11</java.version>
 	</properties>
 
+	<scm>
+        <developerConnection>scm:git:https://github.com/NishkarshRaj/az-dev-community-demo</developerConnection>
+    </scm>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>3.0.0-M4</version>
+			<configuration>
+						<username>NishkarshRaj</username>
+						<password>owfq7djd76bzwbr4f7rifwt3anfoa3xe5it5u7n5ijxrlijttj5a</password>
+					</configuration>
+				  </plugin>
+				
+			<plugin>
+			 <groupId>org.springframework.boot</groupId>
+			 <artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 
 	<repositories>
 	 <repository>
@@ -56,24 +78,5 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>3.0.0-M4</version>
-				<configuration>
-						<username>NishkarshRaj</username>
-						<password>[Insert Your Token here]</password>
-				</configuration>
-			</plugin>
-				
-			<plugin>
-			 <groupId>org.springframework.boot</groupId>
-			 <artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
-
+	
 </project>
