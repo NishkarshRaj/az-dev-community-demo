@@ -17,6 +17,33 @@
 		<java.version>11</java.version>
 	</properties>
 
+
+	<repositories>
+	 <repository>
+		<id>NishkarshRaj</id>
+		<url>https://pkgs.dev.azure.com/NishkarshRaj/_packaging/NishkarshRaj/maven/v1</url>
+		<releases>
+		  <enabled>true</enabled>
+		</releases>
+		<snapshots>
+		  <enabled>true</enabled>
+		</snapshots>
+	  </repository>
+	</repositories>
+
+	<distributionManagement>
+	  <repository>
+		<id>NishkarshRaj</id>
+		<url>https://pkgs.dev.azure.com/NishkarshRaj/_packaging/NishkarshRaj/maven/v1</url>
+		<releases>
+		  <enabled>true</enabled>
+		</releases>
+		<snapshots>
+		  <enabled>true</enabled>
+		</snapshots>
+	  </repository>
+	</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
