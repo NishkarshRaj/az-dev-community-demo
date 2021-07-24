@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azdev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azdev
+  template:
+    metadata:
+      labels:
+        app: azdev
+    spec:
+      containers:
+      - name: azdev
+        image: azdev.azurecr.io/azdev:1.0
+        ports:
+        - containerPort: 8080
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: cred
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: azdev
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 8080
+  selector:
+    app: azdev
